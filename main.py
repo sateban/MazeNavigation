@@ -194,7 +194,7 @@ while True:
 	suc, frame = cap.read()
 	
 	if not suc:
-		print("No Frame")
+		print("There is No Frame")
 		break
 
 	frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
