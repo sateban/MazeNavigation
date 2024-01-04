@@ -1,4 +1,4 @@
-	%reset
+	# %reset
 import ctypes
 import numpy as np
 import cv2
@@ -9,26 +9,26 @@ def get_screen_size():
 	screensize = (user32.GetSystemMetrics(0), user32.GetSystemMetrics(1))
 	return screensize
 
-def combineImage(baseImage, overlayImage):
+# def combineImage(baseImage, overlayImage):
 	# Load the JPG image
-	jpg_image = Image.open(baseImage)
+	# jpg_image = Image.open(baseImage)
 
-	# Load the PNG image with transparency
-	png_image = Image.open(overlayImage)
+	# # Load the PNG image with transparency
+	# png_image = Image.open(overlayImage)
 
-	# Ensure both images have the same mode and alpha channel
-	jpg_image = jpg_image.convert('RGBA')
-	png_image = png_image.convert('RGBA')
+	# # Ensure both images have the same mode and alpha channel
+	# jpg_image = jpg_image.convert('RGBA')
+	# png_image = png_image.convert('RGBA')
 
-	# Resize the PNG image to fit onto the JPG image
-	png_image = png_image.resize(jpg_image.size, Image.LANCZOS)
+	# # Resize the PNG image to fit onto the JPG image
+	# png_image = png_image.resize(jpg_image.size, Image.LANCZOS)
 
-	# Composite the images, using the alpha channel of the PNG image as a mask
-	result_image = Image.alpha_composite(jpg_image, png_image)
+	# # Composite the images, using the alpha channel of the PNG image as a mask
+	# result_image = Image.alpha_composite(jpg_image, png_image)
 
-	# Save or display the result
-	result_image.show()
-	result_image.save('./samples/overlayed_image.jpg')
+	# # Save or display the result
+	# result_image.show()
+	# result_image.save('./samples/overlayed_image.jpg')
 
 def removeBlack(image):	
 	# filename = './samples/maze.png'
