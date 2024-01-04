@@ -394,8 +394,8 @@ while True:
 	# █▀ █ █ █▀█ █ █ █   █ █ █ █ █▄ █ █▀▄ █▀█ █ █ █
 	# ▄█ █▀█ █▄█ ▀▄▀▄▀   ▀▄▀▄▀ █ █ ▀█ █▄▀ █▄█ ▀▄▀▄▀
 	# Show Results, 
-	cv2.imshow('Optical Flow', resized_image)
-	cv2.moveWindow('Optical Flow', x_position, y_position)
+	cv2.imshow('Merged Frames', resized_image)
+	cv2.moveWindow('Merged Frames', x_position, y_position)
 	# cv2.imshow('Mask', mask)
 
 	if cv2.waitKey(10) & 0xFF == ord('q'):
