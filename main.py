@@ -27,7 +27,7 @@ def get_screen_size():
 	# result_image = Image.alpha_composite(jpg_image, png_image)
 
 	# # Save or display the result
-	# result_image.show()
+	# result_image.show() 
 	# result_image.save('./samples/overlayed_image.jpg')
 
 def removeBlack(image):	
